@@ -8,6 +8,59 @@ The goal is to build a decentralized EHR that looks for symptoms of COVID-19 and
 [How we will organizing team and project.](https://medium.com/linnia/how-to-organize-a-project-in-a-hackathon-be54f167498a)
 
 
+## Understanding the problem: 
+1. Understood the domain
+2. Agreed on a problem within that domain
+3. Deeply understood the problem after some discussion. 
+4. The team agrees that it is a real problem worth addressing.
+
+**Domain**: COVID-19.
+See the CDC's information on Coi
+
+**Problem**: COVID-19 is a pandemic which need mitigating. 
+
+Social distancing to reduce case load on healthcare system is the method chosen by governments. Here are [some terms to know] (https://www.nytimes.com/2020/03/11/science/coronavirus-terms-to-know.html)
+
+**Understanding the problem**: Check out the [issue](https://github.com/COVID-19-electronic-health-system/decentralized-electronic-health-record/issues) and (Discord server)[https://discord.gg/BEz3Eb] to ask questions and see discussions.
+
+**Agree that its a problem**:  
+We can agree that COVID-19 is a problem and that mitigating its effects would be worthwhile.
+
+How to address mitigate it effectively?
+
+## Why are design statement important:
+Design statements are a north star to keep the team focused on the problem.
+
+## Crafting Design Statement:
+1. What problem(s) are we solving?
+
+- Mitigating the spread of COVID-19 to avoid overwhelming the healthcare system. 
+
+- Helping older invidiuals avoid public areas to reduce their chances of infection.
+
+- **Anything else?** Post an [issue](https://github.com/COVID-19-electronic-health-system/decentralized-electronic-health-record/issues) to see what is most effective to tackle on. 
+
+2. Who is the user that is suffering real pain from the problem?
+- Everyone. However, in order of severity: Older people, people with immune system issues, older smokers. 
+
+3. What will the situation look like for the user when the user’s problem is addressed?
+- [A flatter curve](https://www.nytimes.com/2020/03/11/science/coronavirus-curve-mitigation-infection.html); Less transmissions translating to lower caseload for hospitals. This means more ventilators and staff per person. The idea is to spread out the infections (or for vunverable population, avoid them all together while healthy population gains 'herd immunity').
+
+- Ideally, the numbers in US per thousand will be lower than Italy or China.
+
+## Design statement:  
+How might we improve _(problem in the domain)______ for _(user)___ , so that _(user-focused outcome)______?
+
+How might we improve **lowering the transmission rate** for **TARGET_POPULATION**, so that we can **flatten the curve on the healthcare system** and **avoid possible infection**?
+
+We must decide on who is our **TARGET_POPULATION**
+
+Is it elderly?  
+Is it adults with immune system deficiencies?
+Is it the general population?   Will be too broad?
+
+Open an [issue](https://github.com/COVID-19-electronic-health-system/decentralized-electronic-health-record/issues) to discuss.
+
 ## Discord server
 Join our discord server:
 https://discord.gg/BEz3Eb
@@ -24,6 +77,21 @@ Help needed from devs with Geolocation experience
 Help needed to create a system that maps connections, but respects privacy. Maybe just hashed phone number or something as an ID.
 
 We want to help generate data so that researchers can learn from the data real-time (while respecting privacy).
+
+## Tech Stack:
+?- open for debate. Post in [issue](https://github.com/COVID-19-electronic-health-system/decentralized-electronic-health-record/issues).
+
+Front end:   
+React, Redux (?), React-Router, 
+
+Geolocation:
+JavaScript Geoloation API, MapBox(?)
+
+Design System:  
+react-boostrap (?)
+
+Back end:  
+ExpressJS, NodeJS, MongoDB (?), 
 
 ## Looking for:
 React Developers
