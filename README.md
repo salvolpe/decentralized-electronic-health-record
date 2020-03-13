@@ -56,7 +56,7 @@ How might we improve **lowering the transmission rate** for **TARGET_POPULATION*
 We must decide on who is our **TARGET_POPULATION**
 
 Is it elderly?  
-Is it adults with immune system deficiencies?
+Is it adults with immune system deficiencies?  
 Is it the general population?   Will be too broad?
 
 Open an [issue](https://github.com/COVID-19-electronic-health-system/decentralized-electronic-health-record/issues) to discuss.
@@ -120,17 +120,17 @@ Open an [issue](https://github.com/COVID-19-electronic-health-system/decentraliz
 Is a regular expressJS/NodeJS server hosted on Heroku better?
 
 ## Looking for:
-React Developers
-React Native Developers 
-Medical Professionals
-Health informatics professionals
-Devs with experience using FHIR 
-Epidemiologists
-System biologists
-Data scientists
-Designers
-UX/UI
-Project managers
+React Developers  
+React Native Developers  
+Medical Professionals  
+Health informatics professionals  
+Devs with experience using FHIR   
+Epidemiologists  
+System biologists  
+Data scientists  
+Designers  
+UX/UI  
+Project managers  
 
 Translators:   
 Korean, Chinese, Persian, Spanish, Portuguese, French, German, Russian, you name it.
