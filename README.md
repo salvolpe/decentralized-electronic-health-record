@@ -65,7 +65,7 @@ Open an [issue](https://github.com/COVID-19-electronic-health-system/decentraliz
 Join our discord server:
 https://discord.gg/BEz3Eb
 
-## IPR- Initial Public Release
+## IPR- Initial Public Release Features
 There will be three features
 1) Symptom tracker that follows a specific medical protocol.   
 Help needed from medical professionals.
@@ -91,7 +91,33 @@ Design System:
 react-boostrap (?)
 
 Back end:  
-ExpressJS, NodeJS, MongoDB (?), 
+ExpressJS, NodeJS, MongoDB (?)
+
+## Wireframes:
+In progress.
+
+So far we need:
+1. Sign in screen
+2. some sort of auth flow. Maybe OAuth.   
+Perhaps Google and Facebook since it has wide coverage. Later Twitter.
+3. Map screen
+4. Survey flow. Perhaps something. Like swiping left or right for yes or no related to questions.
+
+## Medical Questions to ask:
+In Progress.  
+Open an [issue](https://github.com/COVID-19-electronic-health-system/decentralized-electronic-health-record/issues).
+
+## Privacy 
+In Progress.
+Thinking of using [Blockstack](https://docs.blockstack.org/) and using [Sundly](https://github.com/Sundly) as inspiration.
+
+Blockstack allows for users to own their data in a decentralized manner. 
+
+They also have a encrypted centralized sever called [Radiks](https://github.com/blockstack/radiks) which we can used to build model-driven decentralized applications. 
+
+Open an [issue](https://github.com/COVID-19-electronic-health-system/decentralized-electronic-health-record/issues) to suggest ideas. Open to all ideas.
+
+Is a regular expressJS/NodeJS server hosted on Heroku better?
 
 ## Looking for:
 React Developers
