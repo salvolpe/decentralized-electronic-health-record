@@ -1,0 +1,76 @@
+{% load static %}
+{% load leaflet_tags %}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css" integrity="sha256-DOS9W6NR+NFe1fUhEE0PGKY/fubbUCnOfTje2JMDw3Y=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js" integrity="sha256-FEqEelWI3WouFOo2VWP/uJfs1y8KJ++FLh2Lbqc8SJk=" crossorigin="anonymous"></script>
+    {{ form.media }}
+    {% leaflet_js plugins="forms" %}
+    {% leaflet_css plugins="forms" %}
+
+    <style>
+    .leaflet-container {  /* all maps */
+        width:  600px;
+        height: 400px;
+    }
+
+    #specialbigmap {
+        height: 800px;
+    }
+
+    /* Resize the "display_raw" textbox */
+    .django-leaflet-raw-textarea {
+        width: 100%;
+    }
+    </style>
+
+</head>
+
+<body>
+
+<form action="{% url 'records:confirmed_case' %}" method="post">
+    {% csrf_token %}
+    
+    <p>{{ form.non_field_errors }}</p>     
+    
+    <p><div class="fieldWrapper" style="float: center;">
+        {{ form.location.errors }}
+        <label for="{{ form.location.id_for_label }}">Approximate Current Location:</label>
+        {{ form.location }}
+    </div></p>
+  
+    <p><div class="fieldWrapper" style="float: center;">
+        {{ form.estimated_date_contracted.errors }}
+        <label for="{{ form.estimated_date_contracted.id_for_label }}">Estimated Date Contracted:</label>
+        <br>{{ form.estimated_date_contracted }}
+    </div></p>
+
+    <p><div class="fieldWrapper" style="float: center;">
+        <td>
+        {{ form.date_confirmed.errors }}
+        <label for="{{ form.date_confirmed.id_for_label }}">Date Confirmed:</label>
+        <br>{{ form.date_confirmed }}
+    </div></p>
+
+    <p><div class="fieldWrapper" style="float: center;">
+        {{ form.additional_info.errors }}
+        <label for="{{ form.additional_info.id_for_label }}">Additional Information:</label>
+        <br>{{ form.additional_info }}
+    </div></p>
+
+    <p><div class="fieldWrapper" style="float: center;">
+        {{ form.contagion_sites.errors }}
+        <label for="{{ form.contagion_sites.id_for_label }}">Mark locations you have been to since date of contraction. </label>
+        {{ form.contagion_sites }}
+    </div></p>
+    
+    <p><input type="submit" value="Submit" style="float: center;"></p>
+
+</form>
+</body>
+
+</html>

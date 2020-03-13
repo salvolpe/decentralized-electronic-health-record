@@ -1,0 +1,57 @@
+{% load static %}
+{% load leaflet_tags %}
+{% load geojson_tags %}
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>                                                     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css" integrity="sha256-DOS9W6NR+NFe1fUhEE0PGKY/fubbUCnOfTje2JMDw3Y=" crossorigin="anonymous" />               
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js" integrity="sha256-FEqEelWI3WouFOo2VWP/uJfs1y8KJ++FLh2Lbqc8SJk=" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="{% static 'records/css/bootstrap.css' %}">
+    <script src="{% static 'records/js/bootstrap.js' %}"></script>
+    {% leaflet_js plugins="forms" %}
+    {% leaflet_css plugins="forms" %}
+</head>
+
+<body>
+    <style>
+        .leaflet-container {  /* all maps */
+            width:  100%;
+            height: 100%;
+        }
+    </style>
+
+<form class="form-horizontal" method="POST" action="">
+{% csrf_token %}
+{{ formset.management_form }}
+{% for form in formset %}
+ 
+<div class="row form-row spacer">
+    <div class="col-2"></div>
+    <div class=="col-8"><label style="vertical-align:middle;">{{form.location.label}}</label></div>
+</div>
+<div class="row form-row spacer">
+    <div class="col-8">
+        <div class="input-group">
+            {{form.location}}
+            {{form.time}}
+            {{form.DELETE}}
+            <!-- <div class="input-group-append">
+                <button class="btn btn-success add-form-row">+</button>
+            </div> -->
+        </div>
+    </div>
+</div>
+{% endfor %}
+<div class="row spacer">
+    <div class="col-8 offset=2">
+        <button type="submit" class="btn btn-block btn-primary">SUBMIT</button>
+    </div>
+</div>
+</form>
+
+
+</html>
