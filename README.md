@@ -97,7 +97,10 @@ We want to help generate data so that researchers can learn from the data real-t
 ?- open for debate. Post in [issue](https://github.com/COVID-19-electronic-health-system/decentralized-electronic-health-record/issues).
 
 Front end:   
-React, Redux (?), React-Router, 
+React, Redux (?), React-Router.
+
+Package manager:
+Use [Yarn](https://yarnpkg.com/) for /client (front end).
 
 Geolocation:
 JavaScript Geoloation API, MapBox(?)
@@ -107,6 +110,11 @@ react-boostrap (?)
 
 Back end:  
 ExpressJS, NodeJS, MongoDB (?)
+
+Folder structure:
+-/server
+   |- /client
+...
 
 ## Wireframes:
 In progress.
