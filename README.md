@@ -4,6 +4,21 @@ A decentralized electronic health record. Get ahead of the virus by tracking sym
 ## Goal:
 The goal is to build a decentralized EHR that looks for symptoms of COVID-19 and helps with reducing the transmission rate.
 
+## Priorities:
+**Ideally, we should be able to launch something by Monday afternoon (March 16th, 2020)**
+
+As of March 13th, 2020:
+1) The main priority is to narrow down features that experts will find useful. 
+
+2) Then we can scope out features. Then create simple wireframes to build out front end. 
+
+3) Then we can start to assign work and build.
+
+4) Get a domain name and launch.
+It should be sharable by text or WhatsApp.
+
+Target is to have features scoped out by tonight. Start assigning features and work by Saturday morning. 
+
 ## See how to organize a hackathon project:
 [How we will organizing team and project.](https://medium.com/linnia/how-to-organize-a-project-in-a-hackathon-be54f167498a)
 
@@ -153,19 +168,3 @@ Spoke with the maintainer of [Sundly](https://github.com/Sundly/sundly/issues/22
 
 On March 13th, 2020, @6:30pm:
 Will speak with Emergency room doctor and system architect with experience in medical workflows.
-
-
-## Priorities:
-**Ideally, we should be able to launch something by Monday afternoon (March 16th, 2020)**
-
-As of March 13th, 2020:
-1) The main priority is to narrow down features that experts will find useful. 
-
-2) Then we can scope out features. Then create simple wireframes to build out front end. 
-
-3) Then we can start to assign work and build.
-
-4) Get a domain name and launch.
-It should be sharable by text or WhatsApp.
-
-Target is to have features scoped out by tonight. Start assigning features and work by Saturday morning. 
